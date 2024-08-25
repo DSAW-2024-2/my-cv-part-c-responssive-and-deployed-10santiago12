@@ -1,10 +1,8 @@
-/* General Styles */
 body {
     font-family: "Inter", sans-serif;
-    color: #000;
+    background-color: #7b8d93;
     margin: 0;
     padding: 0;
-    background-color:#a5510c;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,31 +10,33 @@ body {
     min-height: 100vh;
 }
 
-/* Container for the Main Content */
-.container {
-    width: 80%;
-    max-width: 1200px;
-    background-color: #444;
-    padding: 20px;
-    border-radius: 15px;
-}
-
-/* Header Styles */
 header {
-    background-color: #52626d;
-    color: #000;
+    background-color: #4a90e2;
+    color: #fff; /* Texto blanco para buen contraste */
     padding: 20px;
     margin: 20px auto;
     border-radius: 15px;
-    border-bottom: #000 2px solid;
-    text-align: center;
+    border-bottom: #333 3.5px solid;
     width: 910px;
 }
 
 .header-content {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    justify-content: space-evenly;
+}
+
+.profile {
+    display: flex;
+    align-items: flex-start;
+}
+
+.profile img 
+{
+    border-radius: 25px;
+    margin-bottom: 20px;
+    width: 225px;
+    height: 240px;
 }
 
 .personal-info {
@@ -46,49 +46,47 @@ header {
     margin-top: 20px;
 }
 
-.personal-info img {
-    border-radius: 25px;
-    margin-bottom: 20px;
-    width: 185px;
-    height: 225px;
+.personal-info ul {
+    list-style: none;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
 }
 
 h1 {
     margin: 10px;
-    font-size: 2.5em;
+    font-size: 3.5em;
 }
 
-/* Main Content Styles */
 .main-content {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: 20px 0;
-    flex-wrap: wrap; /* Makes content stack on smaller screens */
 }
 
 .left-column, .right-column {
     width: 48%;
     margin-bottom: 20px;
-    background-color: #d88e2c;
+    background-color: #50e3c2; /* Un verde menta suave */
+    border: 10px;
+    border-color: #333;
     border-radius: 10px;
-    border-color: #000;
-    border-bottom: 2px solid #000;
+    border-bottom: 3.5px solid #333;
 }
-h2 
-{
+
+h2 {
     text-align: center;
 }
 
-/* Footer Styles */
 footer {
-    background-color: #52626d;
-    color: #000;
+    background-color: #4a90e2;
+    color: #fff;
     width: 950px;
     margin: 10px auto;
     padding: 10px;
     border-radius: 25px;
-    border-bottom: #000 2px solid;
+    border-bottom: #333 3.5px solid;
     text-align: center;
 }
 
@@ -99,7 +97,7 @@ footer h2 {
 }
 
 footer a {
-    color: #000;
+    color: #fff;
     margin: 0 15px;
     font-size: 1.2em;
     text-decoration: none;
@@ -116,4 +114,114 @@ footer a {
     width: 20px;
     height: 20px;
     margin-right: 5px;
+}
+
+/*------------------------------MEDIA QUERIES------------------------------*/
+
+/*@media (max-width: 320px) 
+{
+    body {
+        display: block;
+        padding: 10px;
+    }
+
+    header, .main-content, footer {
+        width: 100%;
+        margin: 10px auto;
+        padding: 10px;
+        border-radius: 15px;
+    }
+
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile img {
+        width: 100px;
+        height: auto;
+    }
+
+    .personal-info ul {
+        text-align: center;
+    }
+
+    .main-content {
+        flex-direction: column;
+    }
+
+    .left-column, .right-column {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .redes {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .redes a {
+        width: 45%;
+        margin: 5px;
+        text-align: center;
+    }
+}*/
+
+@media (max-width: 1023px) and (min-width: 321px)
+{
+    body 
+    {
+        display: block;
+        padding: 10px;
+    }
+
+    header, .main-content, footer 
+    {
+        width: 80%;
+        margin: 10px auto;
+        padding: 10px;
+        border-radius: 15px;
+    }
+
+    .header-content 
+    {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .profile img 
+    {
+        border-radius: 25px;
+        margin-bottom: 10px;
+        width: 175px;
+        height: 200px;
+    }
+
+    .personal-info ul 
+    {
+        text-align: center;
+    }
+
+    .main-content 
+    {
+        flex-direction: column;
+    }
+
+    .left-column, .right-column 
+    {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .redes 
+    {
+        justify-content: center;
+    }
+
+    .redes a 
+    {
+        width: 45%;
+        margin: 5px;
+        text-align: center;
+    }
 }
