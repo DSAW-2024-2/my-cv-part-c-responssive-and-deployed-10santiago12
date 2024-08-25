@@ -118,7 +118,77 @@ footer a {
 
 /*------------------------------MEDIA QUERIES------------------------------*/
 
-@media (max-width: 767px) and (min-width: 320px) /*Celulares*/
+@media (max-width: 393px) and (min-width: 320px) /*Phones small font name*/
+{
+    body 
+    {
+        display: block;
+        padding: 10px;
+    }
+
+    header, .main-content, footer 
+    {
+        width: 80%;
+        margin: 10px auto;
+        padding: 10px;
+        border-radius: 15px;
+    }
+
+    .header-content 
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile img 
+    {
+        width: auto;
+        height: 300px;
+        margin-bottom: 0px;
+    }
+
+    .personal-info
+    {
+        margin-top: 0px;
+    }
+
+    .personal-info ul 
+    {
+        text-align: center;
+        padding: 0%;
+    }
+
+    .personal-info h1
+    {
+        font-size: 29px;
+    }
+
+    .main-content 
+    {
+        flex-direction: column;
+    }
+
+    .left-column, .right-column 
+    {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .redes 
+    {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .redes a 
+    {
+        width: 45%;
+        margin: 5px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 767px) and (min-width: 394px) /*Phones*/
 {
     body 
     {
@@ -188,7 +258,7 @@ footer a {
     }
 }
 
-@media (max-width: 812px) and (min-width: 768px) /*Tablets*/
+@media (max-width: 812px) and (min-width: 768px) /*Tablets small font name*/
 {
     body 
     {
@@ -251,7 +321,7 @@ footer a {
     }    
 }
 
-@media (max-width: 1023px) and (min-width: 813px) /*Desktop*/
+@media (max-width: 1023px) and (min-width: 813px) /*Tablets*/
 {
     body 
     {
