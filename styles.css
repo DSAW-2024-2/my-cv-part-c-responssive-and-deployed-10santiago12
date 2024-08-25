@@ -1,3 +1,4 @@
+/* Estilos generales para desktop (+1024px) */
 body {
     font-family: "Inter", sans-serif;
     background-color: #7b8d93;
@@ -12,7 +13,7 @@ body {
 
 header {
     background-color: #4a90e2;
-    color: #fff; /* Texto blanco para buen contraste */
+    color: #fff;
     padding: 20px;
     margin: 20px auto;
     border-radius: 15px;
@@ -31,8 +32,7 @@ header {
     align-items: flex-start;
 }
 
-.profile img 
-{
+.profile img {
     border-radius: 25px;
     margin-bottom: 20px;
     width: 225px;
@@ -68,9 +68,7 @@ h1 {
 .left-column, .right-column {
     width: 48%;
     margin-bottom: 20px;
-    background-color: #50e3c2; /* Un verde menta suave */
-    border: 10px;
-    border-color: #333;
+    background-color: #50e3c2;
     border-radius: 10px;
     border-bottom: 3.5px solid #333;
 }
@@ -116,9 +114,10 @@ footer a {
     margin-right: 5px;
 }
 
-/*------------------------------MEDIA QUERIES------------------------------*/
+/* -------------------- Media Queries -------------------- */
 
-@media (max-width: 767px) and (min-width: 320px) /*Phones*/
+/* Mobile Portrait (320px x 480px) */
+@media (max-width: 683px) 
 {
     body 
     {
@@ -128,7 +127,7 @@ footer a {
 
     header, .main-content, footer 
     {
-        width: 80%;
+        width: 90%;
         margin: 10px auto;
         padding: 10px;
         border-radius: 15px;
@@ -143,11 +142,11 @@ footer a {
     .profile img 
     {
         width: auto;
-        height: 300px;
+        height: 250px;
         margin-bottom: 0px;
     }
 
-    .personal-info
+    .personal-info 
     {
         margin-top: 0px;
     }
@@ -155,16 +154,16 @@ footer a {
     .personal-info ul 
     {
         text-align: center;
-        padding: 0%;
+        padding: 0;
     }
 
-    .personal-info h1
+    .personal-info h1 
     {
-        font-size: 28px;
+        font-size: 24px;
     }
 
-    .main-content 
-    {
+
+    .main-content {
         flex-direction: column;
     }
 
@@ -176,7 +175,7 @@ footer a {
 
     .redes 
     {
-        flex-wrap: wrap;
+        flex-wrap:wrap;
         justify-content: center;
     }
 
@@ -188,122 +187,54 @@ footer a {
     }
 }
 
-@media (max-width: 812px) and (min-width: 768px) /*Tablets small font name*/
-{
-    body 
-    {
+/* Tablet Portrait (768px x 1024px) */
+@media (min-width: 684px) and (max-width: 1024px) {
+    body {
         justify-content: center;
     }
 
-    header, .main-content, footer 
-    {
+    header, .main-content, footer {
         width: 80%;
         margin: 10px auto;
         padding: 10px;
         border-radius: 15px;
     }
 
-    .header-content 
-    {
+    .header-content {
         flex-direction: row;
         align-items: center;
     }
 
-    .profile img 
-    {
+    .profile img {
         border-radius: 25px;
         margin-top: 10px;
         width: 150px;
         height: auto;
     }
 
-    .personal-info ul 
-    {
+    .personal-info ul {
         text-align: center;
+        font-size: 20px;
     }
 
-    .personal-info h1
-    {
-        font-size: 2.5em;
+    .personal-info h1 {
+        font-size: 35px;
     }
 
-    .main-content 
-    {
+    .main-content {
         flex-direction: column;
     }
 
-    .left-column, .right-column 
-    {
+    .left-column, .right-column {
         width: 100%;
         margin-bottom: 20px;
     }
 
-    .redes 
-    {
+    .redes {
         justify-content: center;
     }
 
-    .redes a 
-    {
-        width: 45%;
-        margin: 5px;
-        text-align: center;
-    }    
-}
-
-@media (max-width: 1023px) and (min-width: 813px) /*Tablets*/
-{
-    body 
-    {
-        display: block;
-        padding: 10px;
-    }
-
-    header, .main-content, footer 
-    {
-        width: 80%;
-        margin: 10px auto;
-        padding: 10px;
-        border-radius: 15px;
-    }
-
-    .header-content 
-    {
-        flex-direction: row;
-        align-items: center;
-    }
-
-    .profile img 
-    {
-        border-radius: 25px;
-        margin-top: 10px;
-        width: 150px;
-        height: auto;
-    }
-
-    .personal-info ul 
-    {
-        text-align: center;
-    }
-
-    .main-content 
-    {
-        flex-direction: column;
-    }
-
-    .left-column, .right-column 
-    {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .redes 
-    {
-        justify-content: center;
-    }
-
-    .redes a 
-    {
+    .redes a {
         width: 45%;
         margin: 5px;
         text-align: center;
