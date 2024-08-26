@@ -72,7 +72,7 @@ h1
     flex-direction: row;
     justify-content: space-between;
     margin: 20px;
-    width: 945px;
+    width: 945px; /*hacerlo de manera manual*/
 }
 
 .left-column, .right-column 
