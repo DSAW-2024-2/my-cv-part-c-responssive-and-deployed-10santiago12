@@ -1,5 +1,5 @@
-/* Estilos generales para desktop (+1024px) */
-body {
+body 
+{
     font-family: "Inter", sans-serif;
     background-color: #7b8d93;
     margin: 0;
@@ -11,7 +11,8 @@ body {
     min-height: 100vh;
 }
 
-header {
+header 
+{
     background-color: #4a90e2;
     color: #fff;
     padding: 20px;
@@ -21,51 +22,60 @@ header {
     width: 910px;
 }
 
-.header-content {
+.header-content 
+{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
 
-.profile {
+.profile 
+{
     display: flex;
     align-items: flex-start;
 }
 
-.profile img {
-    border-radius: 25px;
-    margin-bottom: 20px;
-    width: 225px;
-    height: 240px;
+.profile img 
+{
+    border-radius: 35px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 150px;
+    height: auto;
 }
 
-.personal-info {
+.personal-info 
+{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
 }
 
-.personal-info ul {
+.personal-info ul 
+{
     list-style: none;
     margin: 10px;
     padding: 20px;
     text-align: center;
 }
 
-h1 {
+h1 
+{
     margin: 10px;
     font-size: 3.5em;
 }
 
-.main-content {
+.main-content 
+{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: 20px 0;
 }
 
-.left-column, .right-column {
+.left-column, .right-column 
+{
     width: 48%;
     margin-bottom: 20px;
     background-color: #50e3c2;
@@ -73,11 +83,13 @@ h1 {
     border-bottom: 3.5px solid #333;
 }
 
-h2 {
+h2 
+{
     text-align: center;
 }
 
-footer {
+footer 
+{
     background-color: #4a90e2;
     color: #fff;
     width: 950px;
@@ -88,27 +100,31 @@ footer {
     text-align: center;
 }
 
-footer h2 {
+footer h2 
+{
     margin-top: 4px;
     margin-bottom: 10px;
     font-size: 1.5em;
 }
 
-footer a {
+footer a 
+{
     color: #fff;
     margin: 0 15px;
     font-size: 1.2em;
     text-decoration: none;
 }
 
-.redes {
+.redes
+{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     margin-top: 10px;
 }
 
-.redes img {
+.redes img 
+{
     width: 20px;
     height: 20px;
     margin-right: 5px;
@@ -116,11 +132,9 @@ footer a {
 
 /* -------------------- Media Queries -------------------- */
 
-/* Mobile Portrait (320px x 480px) */
-@media (max-width: 683px) 
-{
-    body 
-    {
+/* Mobile Portrait */
+@media only screen and (max-width: 683px) {
+    body {
         display: block;
         padding: 10px;
     }
@@ -128,9 +142,10 @@ footer a {
     header, .main-content, footer 
     {
         width: 90%;
-        margin: 10px auto;
+        margin: 10px;
         padding: 10px;
         border-radius: 15px;
+        box-sizing: border-box;
     }
 
     .header-content 
@@ -162,20 +177,23 @@ footer a {
         font-size: 24px;
     }
 
-
-    .main-content {
+    .main-content 
+    {
         flex-direction: column;
+        justify-content: center;
     }
 
     .left-column, .right-column 
     {
         width: 100%;
         margin-bottom: 20px;
+        padding: 20px;
+        box-sizing: border-box;
     }
 
     .redes 
     {
-        flex-wrap:wrap;
+        flex-wrap: wrap;
         justify-content: center;
     }
 
@@ -187,54 +205,76 @@ footer a {
     }
 }
 
-/* Tablet Portrait (768px x 1024px) */
-@media (min-width: 684px) and (max-width: 1024px) {
-    body {
+
+/* Tablet Portrait*/
+@media only screen and (min-width: 684px) and (max-width: 1024px) 
+{
+    body 
+    {
         justify-content: center;
     }
 
-    header, .main-content, footer {
+    header, .main-content, footer 
+    {
         width: 80%;
         margin: 10px auto;
         padding: 10px;
         border-radius: 15px;
     }
 
-    .header-content {
+    .header-content 
+    {
         flex-direction: row;
         align-items: center;
     }
 
-    .profile img {
+    .profile img 
+    {
         border-radius: 25px;
         margin-top: 10px;
         width: 150px;
         height: auto;
     }
 
-    .personal-info ul {
+    .personal-info ul 
+    {
         text-align: center;
         font-size: 20px;
     }
 
-    .personal-info h1 {
+    .personal-info h1 
+    {
         font-size: 35px;
     }
 
-    .main-content {
+    .main-content 
+    {
         flex-direction: column;
     }
+    .education, .hobbies 
+    {
+        width: 100%;
+    }
 
-    .left-column, .right-column {
+    .left-column
+    {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .left-column, .right-column 
+    {
         width: 100%;
         margin-bottom: 20px;
     }
 
-    .redes {
+    .redes 
+    {
         justify-content: center;
     }
 
-    .redes a {
+    .redes a 
+    {
         width: 45%;
         margin: 5px;
         text-align: center;
